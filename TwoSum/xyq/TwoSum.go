@@ -29,7 +29,6 @@ func twoSum2(nums []int, target int) []int {
         v_k[num] = i
     }
     for j, num := range nums {
-        fmt.Println(num)
         res := target - num
         k, ok := v_k[res]
         if (ok && k != j) {
